@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+  <div class="glider_wrap">
+    <img src="{{ "/img/paraglider.svg" | prepend: site.baseurl }}"/>
+  </div>
+
+  <div class="about">
+    <p>I'm <span class="semi-bold">Silas</span>, a Raleigh based visual designer with a focus on mobile experiences. This is a compendium of projects <i>&amp;</i> thoughts revolving around technology, design, and the human condition.</p>
+    <p>I'm currently available for <a class="links" href="http://www.condenast.com" target="_blank"><i>freelance projects</i></a>. If you'd like to discuss a role at your company, <a class="links" href="#"><i>email me</i></a> to arrange a call.</p>
+  </div>
+        
+    <div class="items">
+ 
+    <div class="item">
+      <h2 class="item-title">Essays</h2>
+        <ul class="item-list">
+          {% for post in site.posts %}          
+            <li>
+              <a class="links-hover" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+    </div>
+
+    <div class="item">
+      <h2 class="item-title pink">Projects</h2>
+      <ul class="item-list">
+        <li><a class="links-hover" href="https://dribbble.com/patrickrogan/projects/223851-BLK-MRKT" target="_blank">BLK<span class="pink">MRKT</span></a></li>
+        <li><a class="links-hover" href="https://dribbble.com/patrickrogan/projects/171662-Teamworks" target="_blank">Team<span class="tw-green">Works</span></a></li>
+        <li><a class="links-hover" href="https://dribbble.com/patrickrogan/projects/151024-Reedr" target="_blank">Library</span></a></li>
+      </ul>
+    </div>  
+  </div>
+
+<!-- <div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
+-->

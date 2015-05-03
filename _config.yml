@@ -3,9 +3,13 @@ title: Silas | Visual Designer
 email: overanalysissam@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://iamsilas.co" # the base hostname & protocol for your site
+permalink: "/:title"
 twitter_username: patricktrogan
 github_username:  silaswanders
 
 # Build settings
 markdown: kramdown
+sass:
+sass_dir: _sass
+style: compressed

@@ -1,11 +1,11 @@
 # Site settings
-title: Silas | Visual Designer
-email: overanalysissam@gmail.com
+title: Patrick Rogan | Digital Designer
+email: hello@patrickrogan.co
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://iamsilas.co" # the base hostname & protocol for your site
+url: "http://patrickrogan.co" # the base hostname & protocol for your site
 permalink: "/:title"
-twitter_username: patricktrogan
+twitter_username: heyiampatch
 github_username:  silaswanders
 
 # Build settings

@@ -2,32 +2,91 @@
 layout: default
 ---
 
-  <div class="about">
-    <p>I'm <span class="semi-bold">Patrick Rogan</span>, a Raleigh-based digital designer with a focus on creating solutions by rethinking the way we interact with and experience brands and technology. This is a compendium of projects <i>&amp;</i> thoughts revolving around technology, design, and the human condition.</p>
-    <p>I'm currently available for <a class="links" href="mailto:hello@patrickrogan.co" target="_blank">freelance projects</a>. If you'd like to discuss a role at your company, <a class="links" href="mailto:hello@patrickrogan.co">contact me</a> to discuss further.</p>
-  </div>
-        
-    <div class="items">
- 
-    <div class="item">
-      <h2 class="item-title">Essays</h2>
-        <ul class="item-list">
-          {% for post in site.posts %}          
-            <li>
-              <a class="links-hover" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
+  <div class="container">
+    <div class="about">
+      <p>I'm <span class="semi-bold">Patrick Rogan</span>, a Raleigh-based digital designer with a focus on creating solutions by rethinking the way we interact with and experience brands and technology. This is a compendium of projects <i>&amp;</i> thoughts revolving around technology, design, and the human condition.</p>
+      <p>I'm currently available for <a class="links" href="mailto:hello@patrickrogan.co" target="_blank">freelance projects</a>. If you'd like to discuss a role at your company, <a class="links" href="mailto:hello@patrickrogan.co">I'd love to hear about it.</a></p>
     </div>
+  </div>
 
-    <div class="item">
-      <h2 class="item-title">Projects</h2>
-      <ul class="item-list">
-        <li><a class="links-hover" href="https://dribbble.com/patrickrogan/projects/223851-BLK-MRKT" target="_blank">BLK<span class="pink">MRKT</span></a></li>
-        <li><a class="links-hover" href="https://dribbble.com/patrickrogan/projects/330332-6Fusion" target="_blank"><span class="sfgreen">6</span>Fusion</span></a></li>        
-        <li><a class="links-hover" href="https://dribbble.com/patrickrogan/projects/171662-Teamworks" target="_blank">Team<span class="tw-green">Works</span></a></li>
-        <li><a class="links-hover" href="https://dribbble.com/patrickrogan/projects/151024-Reedr" target="_blank">Library</span></a></li>
-      </ul>
-    </div>  
+  <div class="container grid animated fadeInUp" id="grid">
+    <a class="case-link" href="https://dribbble.com/patrickrogan/projects/329375-Crunchyroll">
+      <div class="item two-one" id="crunchyroll">
+        <div class="case-caption">
+          <h1>Redesigning a Viewing Experience</h1>
+          <h3>UX/UI Design <span>for</span> Crunchyroll</h3>
+        </div>
+      </div>
+    </a>
+    <!--
+    <a class="case-link" href="#">
+      <div class="item one" id="mini-bio">
+        <div class="case-caption">
+          <p>My name is Patrick. I create digital solutions by rethinking the way we interact with technology and brands.</p>
+          <h3>Learn More</h3>
+        </div>
+      </div>
+    </a> -->
+
+    <a class="case-link" href="https://dribbble.com/patrickrogan/projects/171662-Teamworks">     
+      <div class="item one" id="teamworks">
+        <div class="case-caption">
+          <h1>A Revolution in Communication</h1>
+          <h3>UI/UX, Development, &amp; Branding <span>for</span> Teamworks</h3>
+        </div>    
+      </div>
+    </a>    
+    <a class="case-link" href="https://dribbble.com/patrickrogan/projects/223851-BLK-MRKT">     
+      <div class="item one-two" id="blkmrkt">
+        <div class="case-caption">
+          <h1>Creating a smooth mobile shopping experience</h1>
+          <h3>Mobile UI &amp; Branding <span>for</span> Tapp Industries</h3>
+        </div>    
+      </div>
+    </a>
+    <a class="case-link" href="/work/6fusion.html">
+      <div class="item two-one" id="sixfusion">
+        <div class="case-caption">
+          <h1>A higher level of cost optimization</h1>
+          <h3>UX/UI &amp; Front-End Development <span>for</span> 6Fusion</h3>
+        </div>    
+      </div>
+    </a>
+    <a class="case-link" href="#">
+      <div class="item two-one" id="aesthete">
+        <div class="case-caption">
+          <h1>A meeting of aesthetics and technology</h1>
+          <h3>Branding <span>for</span> Aesthete</h3>
+        </div>
+      </div>  
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="items">
+
+      <div class="item">
+        <h2 class="item-title">Essays</h2>
+          <ul class="item-list">
+            {% for post in site.posts %}          
+              <li>
+                <a class="links-hover" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+      </div>
+
+      <div class="item">
+        <h2 class="item-title">Social</h2>
+        <ul class="item-list">
+          <li><a class="links-hover" href="https://dribbble.com/patrickrogan/" target="_blank"><span class="dribbble">Dribbble</span></a></li>
+
+          <li><a class="links-hover" href="https://dribbble.com/patrickrogan/projects/330332-6Fusion" target="_blank"><span class="twitter">Twitter</span></span></a></li>
+
+          <li><a class="links-hover" href="http://overanalysissam.tumblr.com" target="_blank"><span class="tumblr">Tumblr</span></a></li>
+
+        </ul>
+      </div>  
+    </div>
   </div>
 
 <!-- <div class="home">

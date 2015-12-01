@@ -32,6 +32,40 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+// colors
+
+$color-1: #2978A0; // Jelly Bean
+$color-2: #315659; // Spectra
+$color-3: #BCAB79; // Gimblet
+$space: #253031; // Outer Space
+$cotton: #FFFFFF; // White
+$lavender: #f0ebfb; // Lavender
+$oatmeal: #dbdbdb; // Oatmeal
+$whitegold: #CBB07B; // White Gold
+
+	// social
+
+	$twitter: #52A8E9;
+	$dribbble: #ea4c89;
+	$tumblr: #36465d;
+
+	.twitter { color: $twitter;}
+	.dribbble {color: $dribbble;}
+	.tumblr {color: $tumblr;}
+
+	// sixfusion
+
+	$sfgreen: #b3d663;
+	$sf-powder: #eae4e6;
+
+// fonts 
+
+$primary-font: "Mark", "Gotham", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$secondary-font: 'Playfair Display', serif;
+
+//number of projects
+
+$items: 3;
 
 
 // Using media queries with like this:

@@ -642,6 +642,9 @@ p.post-meta {
 .tw-green {
   color: #aed04d; }
 
+.sfgreen {
+  color: #b3d663; }
+
 .about p {
   font-size: 36px;
   line-height: 48px; }
@@ -676,7 +679,7 @@ p.post-meta {
   color: #222222; }
 
 .links-hover:hover {
-  color: #70aaca;
+  color: #CBB07B;
   text-decoration: none; }
 
 /*========*/
@@ -725,7 +728,7 @@ p.post-meta {
   transform-origin: 0 50%;
   -webkit-transform: scaleX(1.5) translateY(-0.1em);
   transform: scaleX(1.5) translateY(-0.1em);
-  color: #DEDEDE; }
+  color: #CBB07B; }
 
 @media (min-width: 480px) and (max-width: 760px) {
   .about p {

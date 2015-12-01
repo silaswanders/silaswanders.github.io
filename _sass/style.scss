@@ -104,6 +104,7 @@ body {
 
 	.pink {color: $pink;}
 	.tw-green {color: $tw-green;}
+	.sfgreen {color: $sfgreen;}
 
 
 .about p {
@@ -145,7 +146,7 @@ body {
 	
 }
 .links-hover:hover {
-	color: #70aaca;
+	color: $whitegold;
 	text-decoration: none;
 }
 
@@ -202,7 +203,7 @@ body {
   transform-origin: 0 50%;
   -webkit-transform: scaleX(1.5) translateY(-.1em);
   transform: scaleX(1.5) translateY(-.1em);
-  color: #DEDEDE;
+  color: $whitegold;
 }
 
 @media (min-width: 480px) and (max-width: 760px) {

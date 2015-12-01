@@ -633,7 +633,7 @@ p.post-meta {
   font-weight: 600; }
 
 .links {
-  color: #70aaca;
+  color: #CBB07B;
   text-decoration: none; }
 
 .pink {
@@ -643,7 +643,8 @@ p.post-meta {
   color: #aed04d; }
 
 .about p {
-  font-size: 36px; }
+  font-size: 36px;
+  line-height: 48px; }
 
 .about .links {
   position: relative; }
@@ -714,7 +715,7 @@ p.post-meta {
   margin-bottom: 12px;
   font-family: "Garamond", "Ovo",serif;
   font-weight: 400;
-  color: #70AACA; }
+  color: #CBB07B; }
 
 .item-title::after {
   content: '';

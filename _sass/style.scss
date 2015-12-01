@@ -98,15 +98,17 @@ body {
 	font-weight: 600;
 }
 .links {
-	color: #70aaca;
+	color: $whitegold;
 	text-decoration: none;
 }
 
 	.pink {color: $pink;}
 	.tw-green {color: $tw-green;}
 
+
 .about p {
 	font-size: 36px;
+	line-height: 48px;
 }
 
 .about .links {
@@ -189,7 +191,7 @@ body {
 	margin-bottom: 12px;
 	font-family: "Garamond", "Ovo",serif;
 	font-weight: 400;
-	color: #70AACA;
+	color: $whitegold;
 
 }
 .item-title::after{

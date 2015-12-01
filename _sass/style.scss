@@ -32,12 +32,16 @@ body {
 	}
 
 	.home {
-		padding: 120px 0 0;		
+		padding: 40px 0 0;		
 	}
 
 	/*========*/
 	/* Header */
-	/*========*/		
+	/*========*/	
+
+	.insignia-header {
+		padding: 40px 0;
+	}	
 
 	.insignia_wrap {
 	  position: relative;
@@ -55,6 +59,80 @@ body {
 		  max-width: 100%;
 		  height: 40px;
 		}
+
+/* -------------------------------- 
+
+ Navigation
+
+-------------------------------- */
+
+	.desktop-menu {
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flexbox;
+		display: flex;
+		float: right;
+		
+		list-style: none;
+		margin: 0;
+		padding: 0;		
+		li {
+			-webkit-box-align: center;
+			-moz-box-align: center;
+			box-align: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			-o-align-items: center;
+			align-items: center;
+			-ms-flex-align: center;
+			display: -webkit-box;
+			display: -moz-box;
+			display: box;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flexbox;
+			display: flex;
+			padding: 0 50px 15px;
+			padding-left: 0;			
+		}
+
+		a {
+			display: block;
+			text-decoration: none;
+			color: #505050;
+			font-weight: 400;
+			font-size: 1.125em;
+			padding-bottom: 10px;
+			border-bottom: 2px solid #444;			
+		}	
+		li:last-child {
+		    padding-right: 0;
+		}	
+	}
+
+	.mobile-menu {
+		display: none;
+	}
+
+		.logo-icon {
+			svg #pr-logo {transition: 1s;}
+			svg:hover #pr-logo { fill: $whitegold; }			
+		}
+
+		.menu {
+			display: none;
+			position: relative;
+			right: 0;
+			svg #menu-icon {
+				display: none;
+			}
+			svg:hover #menu-icon { fill: $whitegold; }
+		}
+
 
 /*====================*/
 /* Typography & Links */
@@ -122,7 +200,7 @@ body {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #70aaca; /* color */
+  background: $whitegold; /* color */
   content: '';
   opacity: 0;
   -webkit-transition: opacity 300ms,-webkit-transform 300ms;
@@ -143,11 +221,13 @@ body {
 .links-hover{
 	text-decoration: none;
 	color: #222222;
+	transition: 1s;
 	
 }
 .links-hover:hover {
 	color: $whitegold;
 	text-decoration: none;
+	padding-left: 30px;
 }
 
 /*========*/

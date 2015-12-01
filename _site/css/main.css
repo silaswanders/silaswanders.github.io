@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Ovo);
 @import url(http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
 .twitter {
   color: #52A8E9; }
 
@@ -563,7 +564,7 @@ table {
 /*===========*/
 html {
   background-color: #FAFAFA;
-  font-family: "Garamond", "Ovo",serif;
+  font-family: "Garamond", "Ovo", Georgia, serif;
   font-style: normal;
   font-weight: 400;
   color: #444444;

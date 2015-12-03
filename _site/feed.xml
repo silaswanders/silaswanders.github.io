@@ -3,11 +3,44 @@
   <channel>
     <title>Patrick Rogan | Digital Designer</title>
     <description></description>
-    <link>http://patrickrogan.co/</link>
-    <atom:link href="http://patrickrogan.co/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Dec 2015 16:23:39 -0500</pubDate>
-    <lastBuildDate>Tue, 01 Dec 2015 16:23:39 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 03 Dec 2015 17:58:16 -0500</pubDate>
+    <lastBuildDate>Thu, 03 Dec 2015 17:58:16 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Case Page</title>
+        <description>&lt;article class=&quot;case-header&quot;&gt;
+	&lt;div class=&quot;case-header-logo&quot;&gt;
+		&lt;div class=&quot;cs-logo&quot;&gt;
+			&lt;img src=&quot;../img/sf/sixfusion.svg&quot;&gt;
+		&lt;/div&gt;		
+	&lt;/div&gt;
+	&lt;div class=&quot;case-header-summary&quot;&gt;
+		&lt;p&gt;6Fusion reached out to me to conduct a refresh for the new iteration of their web app that leveraged their existing brand, while providing a user experience that allows the user to view and process a large amount of data at a glance.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;case-header-image&quot;&gt;
+		&lt;img src=&quot;../img/sf/sixfusion-hero.png&quot;&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+&lt;section class=&quot;sf-green&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;retina-scale&quot;&gt;
+			&lt;img src=&quot;../img/sf/sixfusion-typography.png&quot;&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+</description>
+        <pubDate>Tue, 01 Dec 2015 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/case</link>
+        <guid isPermaLink="true">http://localhost:4000/case</guid>
+        
+        
+        <category>case</category>
+        
+      </item>
     
       <item>
         <title>Creativity is Dangerous</title>
@@ -36,8 +69,8 @@ a person who plans the form, look, and/or workings of an article or substance th
 &lt;/blockquote&gt;
 </description>
         <pubDate>Tue, 07 Apr 2015 00:00:00 -0400</pubDate>
-        <link>http://patrickrogan.co/essays/creativity-is-dangerous</link>
-        <guid isPermaLink="true">http://patrickrogan.co/essays/creativity-is-dangerous</guid>
+        <link>http://localhost:4000/essays/creativity-is-dangerous</link>
+        <guid isPermaLink="true">http://localhost:4000/essays/creativity-is-dangerous</guid>
         
         
         <category>articles</category>
@@ -93,8 +126,8 @@ And just like that he got up, dusted himself off, and offered me a hand.&lt;/p&g
 
 </description>
         <pubDate>Sun, 05 Apr 2015 00:00:00 -0400</pubDate>
-        <link>http://patrickrogan.co/the-lingering/chapter-01</link>
-        <guid isPermaLink="true">http://patrickrogan.co/the-lingering/chapter-01</guid>
+        <link>http://localhost:4000/the-lingering/chapter-01</link>
+        <guid isPermaLink="true">http://localhost:4000/the-lingering/chapter-01</guid>
         
         
         <category>articles</category>
@@ -114,8 +147,8 @@ And just like that he got up, dusted himself off, and offered me a hand.&lt;/p&g
 &lt;p&gt;Ubiquity arises after a proven and tried method has been established, but it doesn’t mean it’s our limit. It merely means our forefathers paved the way for the simplicity we are endowed with today. Let’s accept… Let’s accept it and exceed it.&lt;/p&gt;
 </description>
         <pubDate>Sat, 04 Apr 2015 00:00:00 -0400</pubDate>
-        <link>http://patrickrogan.co/essay/the-ubiquitous-web</link>
-        <guid isPermaLink="true">http://patrickrogan.co/essay/the-ubiquitous-web</guid>
+        <link>http://localhost:4000/essay/the-ubiquitous-web</link>
+        <guid isPermaLink="true">http://localhost:4000/essay/the-ubiquitous-web</guid>
         
         
         <category>articles</category>

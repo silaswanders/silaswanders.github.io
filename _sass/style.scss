@@ -33,7 +33,7 @@ body {
 	}
 
 	.home {
-		padding: 40px 0 0;		
+		/* padding: 40px 0 0; */
 	}
 
 	/*========*/
@@ -42,7 +42,19 @@ body {
 
 	.insignia-header {
 		padding: 40px 0;
+		max-width: 75em;
+		width: 100%;
 	}	
+
+	.fixed-header {
+		position: fixed;
+		.link {
+			color: rgba(250,250,250,0.8);
+			border-color: rgba(250,250,250,0.8);
+		}
+		svg #pr-logo { fill: rgba(250,250,250,0.8); }
+		svg:hover #pr-logo { fill: #fff; }
+	}
 
 	.insignia_wrap {
 	  position: relative;
@@ -122,19 +134,18 @@ body {
 		.logo-icon {
 			height: 24px;
 			width: 32px;
+			float: left;
 			a {
 				display: block;
 			}
 			svg #pr-logo {transition: 1s;}
-			svg:hover #pr-logo { fill: $whitegold; }			
+			svg:hover #pr-logo { fill: $whitegold; }
 		}
 
 		.menu {
-			display: none;
 			position: relative;
 			right: 0;
 			svg #menu-icon {
-				display: none;
 			}
 			svg:hover #menu-icon { fill: $whitegold; }
 		}
@@ -186,6 +197,26 @@ body {
 	text-decoration: none;
 }
 
+.links-hover{
+	text-decoration: none;
+	color: #222222;
+	transition: 0.5s;
+	
+}
+
+.links-hover:hover {
+	color: $whitegold;
+	text-decoration: none;
+	padding-left: 30px;
+}
+
+.not-active {
+   pointer-events: none;
+   cursor: default;
+   color: $light-grey;
+   text-decoration: line-through;
+}
+
 	.pink {color: $pink;}
 	.tw-green {color: $tw-green;}
 	.sfgreen {color: $sfgreen;}
@@ -224,18 +255,6 @@ body {
 
 }
 
-.links-hover{
-	text-decoration: none;
-	color: #222222;
-	transition: 1s;
-	
-}
-.links-hover:hover {
-	color: $whitegold;
-	text-decoration: none;
-	padding-left: 30px;
-}
-
 /*========*/
 /* Layout */
 /*========*/
@@ -246,8 +265,7 @@ body {
 	max-width: 75em;
 	margin: 0 auto;
 	padding: 0 10px;
-	padding-bottom: 40px;
-	overflow: auto;
+	/* overflow: auto; */
 }
 
 .item-list {
@@ -270,14 +288,19 @@ body {
 }
 
 .items {
-	overflow: hidden;
+	padding: 40px 0;
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flexbox;
+		display: flex;
 }
 
 .item {
-  display: inline-block;
   vertical-align: top;
   width: 50%;
-  float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -291,15 +314,66 @@ body {
 	color: $whitegold;
 
 }
-.item-title::after{
-  content: '';
-  display: inline-block;
-  padding-left: .2em;
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  -webkit-transform: scaleX(1.5) translateY(-.1em);
-  transform: scaleX(1.5) translateY(-.1em);
-  color: $whitegold;
+
+	.item-title::after{
+	  content: '';
+	  display: inline-block;
+	  padding-left: .2em;
+	  -webkit-transform-origin: 0 50%;
+	  transform-origin: 0 50%;
+	  -webkit-transform: scaleX(1.5) translateY(-.1em);
+	  transform: scaleX(1.5) translateY(-.1em);
+	  color: $whitegold;
+	}
+
+/*============*/
+/* Case Study */
+/*============*/	
+
+.case-header {
+	min-height: 600px;
+	background: #444;
+	margin-top: 20px;
+	box-sizing: border-box;
+	padding-top: 128px;
+
+	.case-header-logo {
+		margin: 0 auto;
+		padding: 40px 0 80px;
+		.cs-logo img {
+			width: 15em;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.case-header-summary {
+		width: 480px;
+		margin: 0 auto;
+		color: #fff;
+		text-align: center;
+
+		p {
+			font-size: 1.25em;
+			line-height: 1.5em;
+		}
+	}
+
+	.case-header-image {
+		img {
+			max-width: 50em; 
+			display: block; 
+			margin: 0 auto;
+		}
+		margin: 0 auto;
+		padding-top: 80px;
+	}
+
+
+}
+
+.filler {
+	height: 400px;
 }
 
 /* -------------------------------- 
@@ -465,24 +539,17 @@ body {
 	background-color: rgba(0,0,0,0.5);
 	padding: 20px;
 	color: rgba(250,250,250,0.8);
-	text-align: center;
 	font-weight: bold;
 	font-size: 1em;
-	display: block;
-	margin: 40px auto;
+	margin: 20px auto 40px;
+	text-align: center;
 }
 
-.cs-sixfusion {
-	.container { 
-		img {
-			margin: 0 auto;
-			text-align: center;
-			display: block;
-			width: 50%;
-		}
-	}
 	.sf-green {
 		background-color: $sfgreen;
+		.container {
+			padding: 40px 0;
+		}
 	}	
 	.sf-white {
 		background-color: $cotton;
@@ -493,8 +560,19 @@ body {
 			img {width: 100%;}
 		}
 	}
+
+.retina-scale img {
+	width: 50%;
 }
 
+.case {
+	img {
+		margin: 0 auto; 
+		text-align: center;
+		display: block;
+	}
+
+}
 
 /* -------------------------------- 
 

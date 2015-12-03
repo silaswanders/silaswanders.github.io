@@ -584,13 +584,25 @@ body {
   padding: 120px 0 0; }
 
 .home {
-  padding: 40px 0 0; }
+  /* padding: 40px 0 0; */ }
 
 /*========*/
 /* Header */
 /*========*/
 .insignia-header {
-  padding: 40px 0; }
+  padding: 40px 0;
+  max-width: 75em;
+  width: 100%; }
+
+.fixed-header {
+  position: fixed; }
+  .fixed-header .link {
+    color: rgba(250, 250, 250, 0.8);
+    border-color: rgba(250, 250, 250, 0.8); }
+  .fixed-header svg #pr-logo {
+    fill: rgba(250, 250, 250, 0.8); }
+  .fixed-header svg:hover #pr-logo {
+    fill: #fff; }
 
 .insignia_wrap {
   position: relative;
@@ -659,7 +671,8 @@ body {
 
 .logo-icon {
   height: 24px;
-  width: 32px; }
+  width: 32px;
+  float: left; }
   .logo-icon a {
     display: block; }
   .logo-icon svg #pr-logo {
@@ -668,11 +681,8 @@ body {
     fill: #CBB07B; }
 
 .menu {
-  display: none;
   position: relative;
   right: 0; }
-  .menu svg #menu-icon {
-    display: none; }
   .menu svg:hover #menu-icon {
     fill: #CBB07B; }
 
@@ -718,6 +728,22 @@ p.post-meta {
   color: #CBB07B;
   text-decoration: none; }
 
+.links-hover {
+  text-decoration: none;
+  color: #222222;
+  transition: 0.5s; }
+
+.links-hover:hover {
+  color: #CBB07B;
+  text-decoration: none;
+  padding-left: 30px; }
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  color: #a3a3a3;
+  text-decoration: line-through; }
+
 .pink {
   color: #F77E73; }
 
@@ -756,16 +782,6 @@ p.post-meta {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px); }
 
-.links-hover {
-  text-decoration: none;
-  color: #222222;
-  transition: 1s; }
-
-.links-hover:hover {
-  color: #CBB07B;
-  text-decoration: none;
-  padding-left: 30px; }
-
 /*========*/
 /* Layout */
 /*========*/
@@ -775,8 +791,7 @@ p.post-meta {
   max-width: 75em;
   margin: 0 auto;
   padding: 0 10px;
-  padding-bottom: 40px;
-  overflow: auto; }
+  /* overflow: auto; */ }
 
 .item-list {
   padding: 0;
@@ -795,13 +810,18 @@ p.post-meta {
   padding-left: 20px; }
 
 .items {
-  overflow: hidden; }
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .item {
-  display: inline-block;
   vertical-align: top;
   width: 50%;
-  float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -822,6 +842,41 @@ p.post-meta {
   -webkit-transform: scaleX(1.5) translateY(-0.1em);
   transform: scaleX(1.5) translateY(-0.1em);
   color: #CBB07B; }
+
+/*============*/
+/* Case Study */
+/*============*/
+.case-header {
+  min-height: 600px;
+  background: #444;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding-top: 128px; }
+  .case-header .case-header-logo {
+    margin: 0 auto;
+    padding: 40px 0 80px; }
+    .case-header .case-header-logo .cs-logo img {
+      width: 15em;
+      display: block;
+      margin: 0 auto; }
+  .case-header .case-header-summary {
+    width: 480px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center; }
+    .case-header .case-header-summary p {
+      font-size: 1.25em;
+      line-height: 1.5em; }
+  .case-header .case-header-image {
+    margin: 0 auto;
+    padding-top: 80px; }
+    .case-header .case-header-image img {
+      max-width: 50em;
+      display: block;
+      margin: 0 auto; }
+
+.filler {
+  height: 400px; }
 
 /* -------------------------------- 
 
@@ -907,25 +962,31 @@ p.post-meta {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   color: rgba(250, 250, 250, 0.8);
-  text-align: center;
   font-weight: bold;
   font-size: 1em;
-  display: block;
-  margin: 40px auto; }
+  margin: 20px auto 40px;
+  text-align: center; }
 
-.cs-sixfusion .container img {
+.sf-green {
+  background-color: #b3d663; }
+  .sf-green .container {
+    padding: 40px 0; }
+
+.sf-white {
+  background-color: #FFFFFF; }
+
+.sf-powder {
+  background-color: #eae4e6; }
+  .sf-powder .container img {
+    width: 100%; }
+
+.retina-scale img {
+  width: 50%; }
+
+.case img {
   margin: 0 auto;
   text-align: center;
-  display: block;
-  width: 50%; }
-.cs-sixfusion .sf-green {
-  background-color: #b3d663; }
-.cs-sixfusion .sf-white {
-  background-color: #FFFFFF; }
-.cs-sixfusion .sf-powder {
-  background-color: #eae4e6; }
-  .cs-sixfusion .sf-powder .container img {
-    width: 100%; }
+  display: block; }
 
 /* -------------------------------- 
 

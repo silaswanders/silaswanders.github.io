@@ -753,6 +753,9 @@ p.post-meta {
 .sfgreen {
   color: #b3d663; }
 
+.about {
+  padding: 40px 0; }
+
 .about p {
   font-size: 36px;
   line-height: 48px; }

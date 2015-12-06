@@ -70,7 +70,8 @@ layout: default
           <ul class="item-list">
             {% for post in site.categories['essay'] %}          
               <li>
-                <a class="links-hover not-active" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a></li>
+                <a class="links-hover not-active" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }} <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span></a>
+                </li>
             {% endfor %}
           </ul>
       </div>

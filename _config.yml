@@ -1,11 +1,11 @@
 # Site settings
-title: Patrick Rogan | Digital Designer
+title: Silas | Digital Designer
 email: hello@patrickrogan.co
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost:4000" # the base hostname & protocol for your site
 permalink: "/:title"
-twitter_username: heyiampatch
+twitter_username: heyiamsilas
 github_username:  silaswanders
 
 # Build settings
